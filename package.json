@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "export NODE_ENV=test || SET \"NODE_ENV=text\" && mocha server/**/*.test.js",
-    "test-watch": "nodemon --exec \"npm test\""
+    "test":"export \"NODE_ENV=test\" || SET \"NODE_ENV=test\" && mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\"",
+    "gg-linux": "export NODE_ENV=test"
   },
   "engines": {
     "node": "8.11.1"
